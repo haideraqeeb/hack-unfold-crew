@@ -58,7 +58,7 @@ def analyze():
     return jsonify(result_json[0])
 
 
-@app.route("/", methods=["GET"])
+@app.route("/")
 def index():
     return jsonify("send request on analyze route")
 
