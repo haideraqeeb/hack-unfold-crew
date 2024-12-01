@@ -58,5 +58,10 @@ def analyze():
     return jsonify(result_json[0])
 
 
+@app.route("/", methods=["GET"])
+def index():
+    return jsonify("send request on analyze route")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
